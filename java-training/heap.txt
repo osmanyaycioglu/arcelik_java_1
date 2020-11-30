@@ -1,0 +1,19 @@
+
+
+                HEAP
+
+        -----------------------------------------------------
+        New Gen              | Survivor1  | Survivor2 |     Old gen
+        O1 O2 O3 O4          | O2 O4      |           |
+        O5 O6 O7 O8 O9       |            | O4 O8 O9  |       
+                             |            |           | O8 O9
+
+
+STACK                           HEAP
+{
+Obj o1 = new Obj();
+o1                              Obj Intance - Memory Alanı - ref count : 1
+Obj o2 = o1;
+o2                                                           ref count : 2
+o2 = null                                                    ref count : 1
+}                                                            ref count : 0
