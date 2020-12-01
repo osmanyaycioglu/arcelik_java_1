@@ -8,7 +8,7 @@ public class PrintRunner {
         employeeLoc.setGender("bay");
         employeeLoc.setName("osman");
         employeeLoc.setSurname("yay");
-        PrintSystem printSystemLoc = new PrintSystem();
+        PrintSystem printSystemLoc = new PrintSystemProxy();
         printSystemLoc.print(employeeLoc);
         // Person
         Person person = new Person();
