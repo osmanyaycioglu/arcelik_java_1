@@ -8,6 +8,7 @@ public class SingletonRunner {
         //
         //        Singleton.getInstance()
         //                 .hello();
+        ESingleton.INSTANCE.hello();
 
         LazySingleton.getInstance()
                      .hello();
