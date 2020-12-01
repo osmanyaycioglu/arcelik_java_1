@@ -10,6 +10,14 @@ public class PrintRunner {
         employeeLoc.setSurname("yay");
         PrintSystem printSystemLoc = new PrintSystem();
         printSystemLoc.print(employeeLoc);
+        // Person
+        Person person = new Person();
+        person.setIsim("ali");
+        person.setSoyisim("veli");
+        person.setCinsiyet("bay");
+        // Person Employee Adaptor
+        PersonEmployeeAdaptor adaptorLoc = new PersonEmployeeAdaptor(person);
 
+        printSystemLoc.print(adaptorLoc);
     }
 }
